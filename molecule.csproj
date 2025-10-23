@@ -4,10 +4,14 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <NoWarn>
+      CA2208 <!-- Use nameof() in ArgumentException ctor -->
+    </NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.10" />
+    <PackageReference Include="System.ServiceModel.Syndication" Version="9.0.10" />
   </ItemGroup>
 
 </Project>
